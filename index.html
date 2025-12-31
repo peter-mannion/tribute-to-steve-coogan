@@ -41,12 +41,101 @@
               <a class="nav-link" href="#">Interviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <!-- Contact nav item triggers modal form -->
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#formModal"
+                href="#"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Modal form -->
+    <div
+      class="modal fade"
+      id="formModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="formModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="formModalLabel">Contact Us</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="GET" class="contact-form">
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact-name"
+                  name="contact-name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contact-email"
+                  name="contact-email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="data-protection-field"
+                  required
+                />
+                <label class="form-check-label" for="data-protection-field"
+                  >I accept the data protection guidelines.</label
+                >
+              </div>
+              <div class="mb-3 form-check">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="container">
