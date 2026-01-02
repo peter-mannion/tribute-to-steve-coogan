@@ -5,9 +5,30 @@
   letter-spacing: 2px;
 }
 
+/* Navbar height variable */
+:root {
+  --nav-height: 70px; /* adjust once, applies to all widths */
+}
+
+/* Set the navbar min-height using the variable */
+.navbar {
+  min-height: var(--nav-height);
+}
+
+/* Brand matches the navbar height and centers the image */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  padding: 0.25rem 0.5rem; /* small horizontal padding */
+}
+
+/* Logo fills the brand height responsively */
 .tribute-logo {
-  width: 87.5px;
-  height: 87.5px;
+  height: calc(var(--nav-height) - 8px); /* leave small inner gap */
+  max-height: 100%;
+  width: auto;
+  display: block;
 }
 
 /* Change the background and border color for a nav item and navbar-brand on hover */
@@ -15,7 +36,6 @@
 .navbar-brand:hover,
 .tribute-logo:hover {
   background-color: lightgray; /* Hover background color */
-  border-color: white; /* Hover border color */
 }
 
 .site-bg {
@@ -40,6 +60,25 @@
 .site-bg > * {
   position: relative;
   z-index: 1;
+}
+
+.icon-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #000caf, #177cf0 70%);
+  color: #fff;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 26, 175, 0.18);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.icon-link:hover,
+.icon-link:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 26, 175, 0.22);
+}
+.icon-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 26, 175, 0.18);
 }
 
 /* Media queries */
