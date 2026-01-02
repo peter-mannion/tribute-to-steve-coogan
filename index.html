@@ -16,11 +16,17 @@
     <nav class="navbar navbar-expand-md bg-body-secondary fixed-top">
       <div class="container-fluid">
         <a
-          class="navbar-brand active logo fs-6 text-wrap"
+          class="navbar-brand active"
           aria-current="page"
           href="./index.html"
-          >A Tribute to Steve Coogan</a
+          title="Home"
         >
+          <img
+            src="./images/steve-coogan-tribute-logo.png"
+            alt="Steve Coogan Logo"
+            class="tribute-logo"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -140,11 +146,14 @@
       </div>
     </div>
 
-    <main>
+    <main class="bg-body-secondary site-bg">
       <div class="row my-5"></div>
-      <section class="container">
-        <section class="row mt-5 pt-5">
-          <section class="col col-12 col-sm-6 mb-4">
+      <section
+        class="container bg-light my-4 p-3 rounded"
+        style="--bs-bg-opacity: 0.75"
+      >
+        <section class="row">
+          <section class="col col-12 col-sm-6">
             <img
               src="./images/steve-coogan-headshot.jpg"
               class="shadow img-fluid rounded mx-auto d-block"
@@ -163,7 +172,7 @@
           </section>
         </section>
       </section>
-      <section class="container">
+      <section class="container bg-light my-4 p-3 rounded">
         <section class="row mt-4">
           <section class="col">
             <h4 class="column-heading-4">Biography</h4>
@@ -181,7 +190,10 @@
           </section>
         </section>
       </section>
-      <section class="container">
+      <section
+        class="container bg-light my-4 p-3 rounded"
+        style="--bs-bg-opacity: 0.75"
+      >
         <section class="row">
           <section class="col">
             <h4 class="column-heading-4">Notable Works</h4>
@@ -195,7 +207,7 @@
           </section>
         </section>
       </section>
-      <section class="container mb-3">
+      <section class="container bg-light my-4 p-3 rounded">
         <section class="row">
           <section class="col">
             <h4 class="column-heading-4">Awards & Recognition</h4>
@@ -217,7 +229,10 @@
           </section>
         </section>
       </section>
-      <section class="container mb-5">
+      <section
+        class="container bg-light my-4 p-3 rounded"
+        style="--bs-bg-opacity: 0.75"
+      >
         <section class="row">
           <section class="col col-12 col-sm-6">
             <h4 class="column-heading-4">Read His Autobiography</h4>
@@ -233,7 +248,7 @@
           <section class="col col-12 col-sm-6">
             <img
               src="./images/steve-coogan-autobiography.jpg"
-              class="img-fluid rounded mx-auto d-block shadow"
+              class="img-fluid rounded mx-auto d-block shadow book-cover"
               alt="Steve Coogan Autobiography"
             />
           </section>
@@ -241,9 +256,9 @@
       </section>
     </main>
     <footer>
-      <div class="container-fluid text-center py-3">
+      <div class="container-fluid bg-body-secondary text-center py-3">
         <p class="mb-0">
-          &copy; 2025, 2026 A Tribute to Steve Coogan. All rights reserved.
+          &copy; 2026 A Tribute to Steve Coogan. All rights reserved.
         </p>
       </div>
     </footer>
