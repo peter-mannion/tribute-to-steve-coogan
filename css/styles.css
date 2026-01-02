@@ -5,11 +5,41 @@
   letter-spacing: 2px;
 }
 
+.tribute-logo {
+  width: 87.5px;
+  height: 87.5px;
+}
+
 /* Change the background and border color for a nav item and navbar-brand on hover */
 .nav-item:hover,
-.navbar-brand:hover {
+.navbar-brand:hover,
+.tribute-logo:hover {
   background-color: lightgray; /* Hover background color */
   border-color: white; /* Hover border color */
+}
+
+.site-bg {
+  background-image: url("../images/steve-coogan-bw-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* optional overlay for readability */
+.site-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+  pointer-events: none;
+}
+
+.site-bg > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Media queries */
@@ -24,6 +54,9 @@
   .column-heading-6,
   .paragraph {
     font-size: 0.75rem;
+  }
+  .book-cover {
+    height: 300px;
   }
 }
 
