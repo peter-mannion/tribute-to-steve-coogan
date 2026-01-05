@@ -53,7 +53,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+  background: rgba(0, 0, 0, 0.15); /* Adjust opacity as needed */
   pointer-events: none;
 }
 
@@ -62,6 +62,19 @@
   z-index: 1;
 }
 
+/* bio page background override (place after .site-bg rules) */
+.bio-bg {
+  background-image: url("../images/steve-coogan-bw-bio-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* optional: tweak overlay opacity if needed */
+.bio-bg::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Icon link styles */
 .icon-link {
   display: inline-block;
   background: linear-gradient(135deg, #000caf, #177cf0 70%);
@@ -90,6 +103,7 @@
   .column-heading-4 {
     font-size: 0.875rem;
   }
+  .column-heading-5,
   .column-heading-6,
   .paragraph {
     font-size: 0.75rem;
@@ -106,6 +120,7 @@
   .column-heading-4 {
     font-size: 1rem;
   }
+  .column-heading-5,
   .column-heading-6,
   .paragraph {
     font-size: 0.875rem;
@@ -119,6 +134,7 @@
   .column-heading-4 {
     font-size: 1.25rem;
   }
+  .column-heading-5,
   .column-heading-6,
   .paragraph {
     font-size: 1rem;
