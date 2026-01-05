@@ -7,7 +7,7 @@
 
 /* Navbar height variable */
 :root {
-  --nav-height: 70px; /* adjust once, applies to all widths */
+  --nav-height: 56px; /* adjust once, applies to all widths */
 }
 
 /* Set the navbar min-height using the variable */
