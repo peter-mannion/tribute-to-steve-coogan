@@ -38,8 +38,8 @@
   background-color: lightgray; /* Hover background color */
 }
 
-.site-bg {
-  background-image: url("../images/steve-coogan-bw-3.jpg");
+.home-bg {
+  background-image: url("../images/steve-coogan-bw-home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@
 }
 
 /* optional overlay for readability */
-.site-bg::before {
+.home-bg::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -57,12 +57,12 @@
   pointer-events: none;
 }
 
-.site-bg > * {
+.home-bg > * {
   position: relative;
   z-index: 1;
 }
 
-/* bio page background override (place after .site-bg rules) */
+/* bio page background override (place after .home-bg rules) */
 .bio-bg {
   background-image: url("../images/steve-coogan-bw-bio-bg.jpg");
   background-size: cover;
@@ -71,6 +71,30 @@
 }
 /* optional: tweak overlay opacity if needed */
 .bio-bg::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* awards page background override (place after .home-bg rules) */
+.awards-bg {
+  background-image: url("../images/steve-coogan-bw-awards-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* optional: tweak overlay opacity if needed */
+.awards-bg::before {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* interviews page background override (place after .home-bg rules) */
+.interviews-bg {
+  background-image: url("../images/steve-coogan-bw-interviews-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* optional: tweak overlay opacity if needed */
+.interviews-bg::before {
   background: rgba(0, 0, 0, 0.15);
 }
 
