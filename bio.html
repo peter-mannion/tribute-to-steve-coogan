@@ -148,18 +148,90 @@
       </div>
     </div>
 
-    <main class="site-bg bio-bg">
+    <main class="home-bg bio-bg">
+      <div class="row my-5"></div>
       <section
-        class="container-fluid bg-light text-center py-5 mb-4"
-        style="--bs-bg-opacity: 0.8"
+        class="container bg-light my-4 rounded"
+        style="--bs-bg-opacity: 0.25"
       >
-        <section class="row mt-1 pt-5">
-          <img
-            src="./images/steve-coogan-headshot.jpg"
-            class="img-fluid rounded mx-auto d-block"
-            alt="Steve Coogan"
-          />
-        </section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/bio-slide-1.jpg"
+                class="d-block w-100"
+                alt="Steve Coogan - BBC Radio 4 - Desert Island Discs"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/bio-slide-2.jpg"
+                class="d-block w-100"
+                alt="Steve Coogan Exclusive Interview as part of Shedinburgh Festival"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/bio-slide-3.avif"
+                class="d-block w-100"
+                alt="Steve Coogan image by Lionsgate"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/bio-slide-4.jpg"
+                class="d-block w-100"
+                alt="Steve Coogan. Photo by Manuel Harlan"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
       <section class="container bg-light my-4 p-3 rounded">
         <section class="row mt-4">
@@ -169,7 +241,7 @@
             <p class="paragraph">
               Steve Coogan's early life was shaped by his upbringing in
               Middleton, Greater Manchester, England. Born on October 14, 1965,
-              he was the son of a bus driver and a nurse. Coogan attended
+              he was the son of an engineer and a housewife. Coogan attended
               Cardinal Langley Grammar School in Middleton. His interest in
               performing arts began at a young age, and he was actively involved
               in school plays. His passion for comedy and acting led him to
@@ -226,9 +298,10 @@
           </section>
         </section>
       </section>
+      <div class="row"></div>
     </main>
     <footer>
-      <div class="container-fluid text-center py-3">
+      <div class="container-fluid bg-body-secondary text-center py-2">
         <p class="paragraph mb-0">
           &copy; 2026 A Tribute to Steve Coogan. All rights reserved.
         </p>
