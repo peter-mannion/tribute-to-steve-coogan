@@ -90,12 +90,12 @@
 .interviews-bg {
   background-image: url("../images/steve-coogan-bw-interviews-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 /* optional: tweak overlay opacity if needed */
 .interviews-bg::before {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Icon link styles */
