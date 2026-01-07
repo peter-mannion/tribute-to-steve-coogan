@@ -76,14 +76,14 @@
 
 /* awards page background override (place after .home-bg rules) */
 .awards-bg {
-  background-image: url("../images/steve-coogan-bw-awards-bg.jpg");
+  background-image: url("../images/steve-coogan-bw-awards-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* optional: tweak overlay opacity if needed */
 .awards-bg::before {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* interviews page background override (place after .home-bg rules) */
@@ -120,7 +120,7 @@
 
 /* Media queries */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 200px) {
   .column-heading-3 {
     font-size: 1rem;
   }
