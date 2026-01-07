@@ -121,6 +121,9 @@
 /* Media queries */
 
 @media screen and (min-width: 200px) {
+  .column-heading-2 {
+    font-size: 1.5rem;
+  }
   .column-heading-3 {
     font-size: 1rem;
   }
@@ -128,7 +131,6 @@
     font-size: 0.875rem;
   }
   .column-heading-5,
-  .column-heading-6,
   .paragraph {
     font-size: 0.75rem;
   }
@@ -138,6 +140,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .column-heading-2 {
+    font-size: 2rem;
+  }
   .column-heading-3 {
     font-size: 1.25rem;
   }
@@ -145,13 +150,15 @@
     font-size: 1rem;
   }
   .column-heading-5,
-  .column-heading-6,
   .paragraph {
     font-size: 0.875rem;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .column-heading-2 {
+    font-size: 2.5rem;
+  }
   .column-heading-3 {
     font-size: 1.5rem;
   }
@@ -159,7 +166,6 @@
     font-size: 1.25rem;
   }
   .column-heading-5,
-  .column-heading-6,
   .paragraph {
     font-size: 1rem;
   }
