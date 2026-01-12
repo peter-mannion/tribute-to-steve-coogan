@@ -55,10 +55,12 @@ Contact menu item
 - HTML
 - CSS
 - Bootstrap
-  a. Navigation bar and hamburger menu
-  b. Containers, rows, cols
-  c. Carousel
-  d. Modal Form
+<ol type="a">
+  <li>Navigation bar and hamburger menu</li>
+  <li>Containers, rows, cols</li>
+  <li>Carousel</li>
+  <li>Modal Form</li>
+</ol>
 
 # Ideas for future improvement
 
