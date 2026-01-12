@@ -1,14 +1,14 @@
 /* Navbar height variable */
 :root {
-  --nav-height: 70px; /* adjust once, applies to all widths */
+  --nav-height: 70px; /* Adjust this value to change navbar height */
 }
 
-/* Set the navbar min-height using the variable */
+/* Set navbar min-height using the CSS variable */
 .navbar {
   min-height: var(--nav-height);
 }
 
-/* Brand matches the navbar height and centers the image */
+/* navbar-brand matches the navbar height and centers the image */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -16,21 +16,22 @@
   padding: 0.25rem 0.5rem; /* small horizontal padding */
 }
 
-/* Logo fills the brand height responsively */
+/* Tribute logo fills the brand height responsively */
 .tribute-logo {
-  height: calc(var(--nav-height) - 8px); /* leave small inner gap */
+  height: calc(var(--nav-height) - 8px); /* subtracting padding */
   max-height: 100%;
   width: auto;
   display: block;
 }
 
-/* Change the background and border color for a nav item and navbar-brand on hover */
+/* Change the background color for a nav-item, navbar-brand, and tribute-logo on hover action */
 .nav-item:hover,
 .navbar-brand:hover,
 .tribute-logo:hover {
-  background-color: lightgray; /* Hover background color */
+  background-color: lightgray; /* Change to desired hover color */
 }
 
+/* Home page background style */
 .home-bg {
   background-image: url("../images/steve-coogan-bw-home-bg.jpg");
   background-size: cover;
@@ -41,7 +42,7 @@
   min-height: 100vh;
 }
 
-/* optional overlay for readability */
+/* Overlay to darken the background image for better text readability */
 .home-bg::before {
   content: "";
   position: absolute;
@@ -50,43 +51,45 @@
   pointer-events: none;
 }
 
+/* Ensure content inside home-bg is above the overlay */
 .home-bg > * {
   position: relative;
   z-index: 1;
 }
 
-/* bio page background override (place after .home-bg rules) */
+/* bio page background override */
 .bio-bg {
   background-image: url("../images/steve-coogan-bw-bio-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* optional: tweak overlay opacity if needed */
+
+/* adjust bio-bg overlay opacity as needed */
 .bio-bg::before {
   background: rgba(0, 0, 0, 0.15);
 }
 
-/* awards page background override (place after .home-bg rules) */
+/* awards page background override */
 .awards-bg {
   background-image: url("../images/steve-coogan-bw-awards-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* optional: tweak overlay opacity if needed */
+/* adjust awards-bg overlay opacity as needed */
 .awards-bg::before {
   background: rgba(0, 0, 0, 0.25);
 }
 
-/* interviews page background override (place after .home-bg rules) */
+/* interviews page background override */
 .interviews-bg {
   background-image: url("../images/steve-coogan-bw-interviews-bg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
-/* optional: tweak overlay opacity if needed */
+/* adjust interviews-bg overlay opacity as needed */
 .interviews-bg::before {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -128,7 +131,7 @@
     font-size: 0.75rem;
   }
   .book-cover {
-    height: 300px;
+    height: 280px;
   }
 }
 
@@ -146,6 +149,9 @@
   .paragraph {
     font-size: 0.875rem;
   }
+  .book-cover {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -161,5 +167,8 @@
   .column-heading-5,
   .paragraph {
     font-size: 1rem;
+  }
+  .book-cover {
+    height: 350px;
   }
 }
